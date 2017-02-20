@@ -21,5 +21,5 @@ RUN sed -i '/TerminalServerUsers/d' /etc/xrdp/sesman.ini \
 EXPOSE 3389 22
 #WORKDIR /home/alpine
 #USER alpine
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["/usr/bin/supervisord","-c","/etc/supervisord.conf"]
