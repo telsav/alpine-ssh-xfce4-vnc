@@ -1,4 +1,4 @@
-FROM danielguerra/alpine-sshdx
+FROM charliev5/alpine
 
 
 ADD apk /tmp/apk
