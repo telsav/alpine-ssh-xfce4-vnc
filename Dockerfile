@@ -2,7 +2,7 @@ FROM charliev5/alpine
 
 
 ADD apk /tmp/apk
-RUN cp /tmp/apk/.abuild/-57cfc5fa.rsa.pub /etc/apk/keys
+RUN cp /tmp/apk/-57cfc5fa.rsa.pub /etc/apk/keys
 
 RUN apk --update --no-cache add xrdp xvfb alpine-desktop xfce4 thunar-volman \
 faenza-icon-theme slim xf86-input-synaptics xf86-input-mouse xf86-input-keyboard \
